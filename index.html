@@ -1,119 +1,846 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 	<head>
 
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- meta tags, fill them with website meta infos -->
+		<meta name="description" content="This is a thesis website of Paulina Cywoniuk" /> 
+		<meta name="keywords" content="Storytelling, Interactive, Environments, Games, Virtual Reality ..."/> 
+		<meta name="author" content="Paulina Cywoniuk" />
+
+		<!-- favicon, fill with a 512x512px .png image named 'favicon.png' -->
+		<link rel="icon" href="assets/images/favicon/favicon.png"/>
 
 		<!-- website title, visible in the browser window and on link sharing -->
-		<title>CSS layout exercise</title>
+		<title>Paulina Thesis</title>
 
 		<!-- links for extensions and dependencies -->
 
-		<!-- css -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+		<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Petrona:wght@500&display=swap" rel="stylesheet"> -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Petrona:wght@600&display=swap" rel="stylesheet">
+
+<!-- css -->
 		<!-- first link your CSS dependences, here is normalize, a CSS 'reset' for cross-browser appearence uniformity -->
 		<link rel="stylesheet" href="assets/css/normalize.css">
 		<!-- you stylesheet -->
-		<link rel="stylesheet" href="assets/css/style.css?ver=1.0">
+		<link rel="stylesheet" href="assets/css/my-style.css?ver=1.0">
+
+		<!-- js -->
+		<!-- first link your javascript dependencies, here as an example is Jquery -->
+		<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+		
+		
+		<!-- <script language="javascript" text="text/javascript" src="assets/js/p5.js"></script> -->
+		<script language="javascript" text="text/javascript" src="assets/js/matter.js"></script>
+		
+		<!-- your function scripts -->
+		
+
+
 	    
 	</head>
 
 	<body>
+		<script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.js"></script>
+				<script type="text/javascript" src="assets/js/script.js?ver=1.0"></script>
+
 
 		<!-- webpage content goes here -->
 
 		<div class="page-wrapper">
 
-			<main class="layout-container">
+			<div id="canvas2">
+				
+			</div>
+			<header>
+			
+				<script type="text/javascript" src="assets/js/squares.js"> </script>
+		<script type="text/javascript" src="assets/js/boundary.js"></script>
+		<script type="text/javascript" src="assets/js/box.js"></script>
 
-				<div class="layout-block layout-block-1">
+				<h1> Storytelling in interactive environments</h1>
+				<p>A thesis by <em>Paulina Cywoniuk</em></p>
+				<p>Royal Academy of Art, The Hague, 2024</p>
+				
 
-					<p>Block 1</p>
+				
 
-				</div>
-
-
-				<div class="layout-block layout-block-2">
-
-					<p>Block 2</p>
-
-				</div>
-
-
-				<div class="layout-block layout-block-3">
-
-					<p>Block 3</p>
-
-				</div>
-
-				<div class="layout-block layout-block-4">
-
-					<p>Block 4</p>
-
-				</div>
+			</header>
 
 
-				<div class="layout-block layout-block-5">
+			<main id="mainBody">
 
-					<p>Block 5</p>
+				<div class="menu" >
 
-				</div>
+					<div class="menu-inner">	
+											
+						<a href="#abstract"> Abstract </a>	
+						<a href="#intro"> Introduction </a>
+						<a href="#storytelling"> Storytelling </a>
+						<a href="#tabletop"> Tabletop </a>
+						<a href="#videogames"> Video Games </a>
+						<a href="#immersiveprojects"> Immersive Projects </a>
+						<a href="#conclusion"> Conclusion </a>
+						<a href="#bibliography"> Bibliography </a>
 
-
-				<div class="layout-block layout-block-6">
-
-					<p>Block 6</p>
+					</div>
 					
 				</div>
+				
+<p>Thesis written under the supervision of PhD Füsun Türetken</p>
+<p>Website made under the supervision of Thomas Buxo and François Girard-Meunier</p>
 
-				<div class="layout-block layout-block-7">
+				<h2 class = "target abstract" id = "abstract">Abstract</h2>
+<p>This thesis explores the influence of interactive environments on
+storytelling. It will dive into the evolution of storytelling in the
+digital age and investigate how various games and immersive projects can
+serve as a catalyst for engaging narrative experiences. Additionally,
+this thesis examines case studies of successful interactive storytelling
+projects, highlighting the role of interactivity in shaping the user's
+journey and fostering a more profound connection between the audience
+and the narrative. Ultimately, this investigation contributes to the
+understanding of the dynamic role game design plays in pushing the
+boundaries of narrative communication in the digital era and how
+storytelling benefits from the interactive mediums.</p>
 
-					<p>Block 7</p>
+<h2 class = "target intro" id="intro">Introduction</h2>
+<p>Since I have been young I have always been fascinated by good
+stories. Every time I was exposed to a game, a movie or any other piece
+of art that would tell a story in an entertaining way, I’d remember it
+and let it live in my mind rent free. Until this day when I see a story
+that moves me, I keep it in my head, replay it in my memories, I add
+stuff to it in my imagination and I relive it over and over, my way.
+This is an amazing feeling that entertains me and it is something I want
+to give others as a designer. What I aspire to analyse in my
+thesis are the manifold ways of storytelling in interactive environments
+while attempting to comprehend this medium better.</p>
+<p>I believe that interactivity adds to every story on another level.
+What do I mean by that? I argue that it can engage the
+audience emotionally, making them believe that their actions and choices
+influence the story itself. This makes them engage with it more or it
+can encourage people to explore more freely the possibilities of it, and
+more. As a maker my values include providing entertainment to people,
+spreading curiosity and telling stories people can relate to, thus those
+are the things I’d like to research further on a theoretical level in my
+thesis. For me an interactive story is by definition close to a game,
+that’s why in majority I will be focusing on games as examples in my
+thesis.</p>
+<p>I would like to analyse different types of interactive environments
+for storytelling as well as the ways to tell a story. My main
+inspiration for how I’d analyse the storytelling pieces comes from Jakob
+Geller<span class="sidenote-wrapper"><label for="sn-0" class="margin-toggle sidenote-number"></label><span class="sidenote">Contributors to Wikitubia. “Jacob Geller.” Fandom, Inc., https://youtube.fandom.com/wiki/Jacob_Geller.<br/><br />
+</span></span>
+. He’s a writer and a game analyst
+and the way he describes games reminds me of how one would analyse a
+literature piece. He analyses narratives in video games and compares
+them to real world examples and how a particular story is presented in
+the medium of video games.<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><span class="sidenote">Geller, Jacob. “Staring into the Sun, and Other Ways of Capturing Transcendence.” YouTube, Video, 7 Aug. 2023, https://www.youtube.com/watch?v=WSbUPaLTTUg.
+	<br/><br /></span></span> I’m a fan of his
+approach to game analysis because it’s different from everything I’ve
+seen so far and I see him telling his own story through his writing, it
+is really engaging. When I looked for people who write about games he
+stood out to me since he didn’t focus as much on the mechanics of the
+games he described, but instead on the story being told. He says that in
+writing about games it can be boring to analyse every technicality.
+Instead Jakob Geller recommends two categories: previews (what this game
+might be like) and reviews (what this game is like). As I’m watching his
+video essays on YouTube I feel so invested, even when he talks about
+games that I have never seen before. That’s why I will try my best to
+take inspiration from his way of writing. He has a poetic way to analyse
+games as a piece of art in my opinion.</p>
+<p>I'll attempt to provide examples of various stories told in specific
+interactive environments and I will dig into how those stories benefit
+from their medium.</p>
 
-				</div>
+<h2 class="target chapter-1" id="storytelling">Storytelling</h2>
+<p>I see stories in every part of my life. When I walk in the city I see
+advertisements with marketing attempting to tell a story of a particular
+brand. When I go on social media I see everyday stories of my friends.
+Movies I watch, games I play or books I read are all stories - whether
+they are fictional or not. Probably most of my knowledge is based on
+stories I was told as a kid. “Every culture has its own stories or
+narratives, which are shared as a means of entertainment, education,
+cultural preservation or instilling moral values.”<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><span class="sidenote">“Storytelling.” Wikipedia, 24 Feb. 2024, https://en.wikipedia.org/wiki/Storytelling.
+	<br/><br /></span></span></p>
+<p>Storytelling has evolved over centuries, adapting to different media
+and technological advancements. I noticed that in recent years, the
+influence of graphic design and game design has given rise to a
+fascinating intersection where storytelling takes on new dimensions in
+interactive environments.<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><span class="sidenote">The Simple Essence of Great Storytelling. https://www.faisaljamshaid.com/blog/the-simple-essence-of-great-storytelling.
+	<br/><br /></span></span> In this chapter I’ll look into the
+essence of storytelling, explore its connection to graphic design and
+game design, highlighting its significance, and elucidate how
+interactive environments can enhance and enrich the narrative
+experience.</p>
+<p>At its core, storytelling involves the creation and communication of
+a narrative, weaving together characters, settings, and series of events
+to evoke an emotional response or convey a message. The beauty of
+storytelling lies in its ability to transport audiences to different
+worlds, evoke powerful emotions, engage and provoke thought and
+introspection. Through storytelling, individuals can explore universal
+themes and experiences, confront complex issues, and gain new
+perspectives on the world around them. Whether through literature, film,
+theatre, oral traditions, or digital media, storytelling has the power
+to inspire, educate, and entertain.</p>
+<p>Traditionally confined to oral traditions, storytelling has now found
+a new canvas in the digital realm, with interactive environments
+offering an unprecedented platform for engagement. Users no longer
+passively consume a narrative but actively contribute to its unfolding,
+influencing outcomes and shaping the story's direction. By giving the
+audience a choice on how to progress in the story, or an illusion of one
+(more about it in Chapter 3) they can be more engaged. Stories that are
+presented in different media can branch into various developments, being
+interactive mediums like video games, where choices made by the player
+can influence the story, or less interactive, like films or books.</p>
+<p>Graphic design, with its emphasis on visual communication, plays an
+important role in storytelling. Visual elements, such as typography,
+colour schemes, and imagery, contribute to the overall narrative
+experience. In a commercial context, storytelling becomes a valuable
+strategy for branding and marketing too. Brands leverage interactive
+environments to craft compelling narratives that resonate with their
+audience, creating memorable and impactful experiences.<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><span class="sidenote">Decker, Allie. “The Ultimate Guide to Storytelling.” HubSpot, 05 Nov. 2023, https://blog.hubspot.com/marketing/storytelling.
+	<br/><br /></span></span> A
+well-designed visual language can enhance the emotional impact of a
+story or guide the user's attention. Game design, on the other hand,
+characterised by its interactive entertainment creates narratives that
+are shaped by player choices and actions. The fusion of gameplay
+mechanics with storytelling elements results in a unique medium where
+users not only experience a story but actively participate in its
+construction<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><span class="sidenote">Alismail, Halah Ahmed. “Integrate Digital Storytelling in Education.” Integrate Digital Storytelling in Education, 2015, https://files.eric.ed.gov/fulltext/EJ1082416.pdf.
+	<br/><br /></span></span>.</p>
+<p>The significance of storytelling in interactive environments extends
+beyond entertainment. Be it of civil or of military nature: think
+of educational settings, in which interactive storytelling can
+facilitate immersive learning experiences, making complex subjects more
+accessible and engaging.<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><span class="sidenote">Skolnick, Evan. Video Game Storytelling: What Every Developer Needs to Know about Narrative Techniques. CRC Press, 2014.
+	<br/><br /></span></span> Interactive environments provide a
+canvas for storytellers to experiment with non-linear narratives, player
+agency, and emergent storytelling. The element of interactivity
+introduces a dynamic dimension to the narrative, where user choices,
+exploration, and interactions shape the unfolding story. This
+participatory nature not only enhances engagement but also encourages
+users to invest emotionally in the narrative outcomes.</p>
+<p>Moreover, the use of immersive technologies, such as virtual reality
+(VR) and augmented reality (AR), elevates the storytelling experience to
+new heights. These technologies immerse users in virtual worlds,
+blurring the lines between fiction and reality. The spatial and sensory
+aspects of VR, for instance, enable users to explore and interact with
+the story environment in ways previously unattainable, enhancing the
+overall storytelling experience.</p>
+<p>I do acknowledge also the risks of the addictive nature of such
+immersion.<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><span class="sidenote">Dwivedi, Yogesh K., et al. “Metaverse beyond the Hype: Multidisciplinary Perspectives on Emerging Challenges, Opportunities, and Agenda for Research, Practice and Policy.” International Journal of Information Management, vol. 66, Oct. 2022, p. 102542, https://doi.org/10.1016/j.ijinfomgt.2022.102542.
+	<br/><br /></span></span> This can be one of the reasons why
+gaming can become addictive but also due to reward systems or social
+elements, which can lead to excessive gaming behaviour and neglect of
+other responsibilities. Additionally, the incorporation of gambling
+mechanics, such as loot boxes or in-game currency purchases, in some
+games can contribute to addictive behaviours by exploiting psychological
+triggers and encouraging repetitive spending in pursuit of rewards. In
+this thesis though I will not be focusing on the addictive mechanics of
+interactive environments, but on how stories told in those mediums can
+be more appealing to the audience.</p>
+<p>As mentioned before, stories can be told in different media, orally,
+as a written story, a film, as a (series of) images or something else
+entirely. Fairytales can be an example of both written and oral
+storytelling, especially those that mean to convey morals in them. In
+the fairy tale "The Tortoise and the Hare," the moral emphasises the
+importance of perseverance and consistency over arrogance and
+overconfidence. Despite the hare's natural speed, the tortoise's steady
+progress and determination ultimately lead to victory, teaching the
+lesson that slow and steady wins the race.</p>
+<p>I personally see a strong connection between storytelling and games
+in particular, I believe this medium enriches the possibilities of
+engaging in a story. Adding interactivity to it provides additional
+entertainment for the audience and provides a new canvas to present the
+story on. Interactive environments refer to digital or physical spaces
+designed to engage users actively through real-time interactions and
+feedback.<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><span class="sidenote">Rachael. “What Is The Difference Between Immersive And Interactive - Draw & Code.” Draw & Code - VR, AR & Immersive Tech, https://drawandcode.com/learning-zone/what-is-the-difference-between-immersive-and-interactive/.
+	<br/><br /></span></span> Physical interactive environments
+can involve interactive installations, such as art exhibits or
+educational displays, where users' actions influence the experience or
+outcome. In digital contexts, they may include virtual reality
+simulations, online gaming platforms, or interactive websites that
+respond to user inputs. For example the website on which this thesis is
+published, I use shapes in the background to create a playful and
+interactive environment.<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><span class="sidenote">https://github.com/kabk/go-theses-24-paulina-cywoniuk
+	<br/><br /></span></span></p>
+<p>In the next chapter I will describe my experiences with storytelling
+in tabletop, card and board games. Tabletop games are various types of
+games that are played on the table. This particular environment will not
+be digital, but nonetheless interactive and engaging.</p>
 
+<h2 class="target chapter-2" id="tabletop">Tabletop</h2>
+<p><em>When I was 16 I was invited to play Dungeons and Dragons</em>
+	(D&amp;D) <em>with my friends for the first time. I heard about this
+	game before, but the only image about it that I had is that it’s a
+	popular game among “nerds”</em><span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><span class="sidenote">Dictionary, Cambridge. “Nerd.” English Meaning - Cambridge Dictionary, https://dictionary.cambridge.org/dictionary/english/nerd.
+		<br/><br /></span></span></p><em>. I didn’t mind
+	playing a nerdy game or being perceived as a “nerd”, I just was excited
+	to play something with my friends. I was asked to prepare something
+	beforehand - my own character for the play. I’ve never heard about any
+	board game before that was necessary to prepare beforehand so I was a
+	bit surprised.</em></p>
+<p><div class="row">
+	<div class="column"><img id ="image1"src="assets/images/different dnd.jpg"
+style="width:2.69451in;height:3.43121in" /> </div>
+	<div class="column"><img src="assets/images/different dnd players book.jpg"
+style="width:2.50379in;height:3.27496in" /></div></div></p>
+<p><em>When I asked my friend for help with filling up the character
+	sheet, he sent me A WHOLE BOOK as an instruction. Upon further research
+	I found that it’s 46 books</em><span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><span class="sidenote"> Delano, Ollie. “All DnD 5e Books: A Complete List.” Dungeons &amp; Dragons Fanatics, 13 Feb. 2024, https://dungeonsanddragonsfan.com/dnd-5e-books-list/.
+		<br/><br /></span></span> <em>that goes into
+	making this game whole! No wonder people say it’s a game for nerds, that
+	sure is a lot of lore to read and rules to understand…</em></p>
+	<p>In Dungeons &amp; Dragons, the players form an adventuring party who
+	explore fantasy worlds together as they embark on epic quests and level
+	up in experience. The “Dungeon Master” (DM) is the game's referee and
+	storyteller. At its heart, D&amp;D is a game that focuses on
+	storytelling. Everything is your decision, from what you look like, to
+	how you act, to what happens next. The collective creativity in your
+	D&amp;D game builds stories that you’ll tell again and again—ranging
+	from the stuff of legend to absurd incidents that’ll make campaign
+	members laugh. D&amp;D provides a platform for interactive storytelling,
+	where players actively engage with the narrative through role-playing
+	and improvisation. By assuming the roles of fictional characters,
+	players immerse themselves in the story world, blurring the lines
+	between fiction and reality. I think this interactive element heightens
+	player immersion and emotional investment in the narrative, making the
+	storytelling experience more compelling and memorable.</p>
+	<p><em>I was reassured though that I need to know only a few chapters
+	from one book to start playing. So I got into it and as I was reading
+	what options I’m choosing from I got more and more excited. First, I
+	went with choosing the race of my character. In the basic Player’s
+	Handbook there are 9 races to choose from - Dwarf, Elf, Hafling, Human,
+	Dragonborn, Gnome, Half-Elf, Half-Orc and Tiefling. I went for the
+	dragonborn, because dragons are cool and I wanted to play as a half
+	dragon. Then, I needed to choose my class and I went with a Warlock
+	because I liked the idea of performing magic spells. I was choosing from
+	those twelve:</em> <em>Barbarian, Bard, Cleric, Druid, Fighter, Monk,
+	Paladin, Ranger, Rogue, Sorcerer, Warlock and Wizard.</em></p>
+	<p><em>And there I was! A warlock half-dragon named Max - my own
+	character starting an adventure with my friends!</em></p>
+	<p>When someone plays a <em>Dungeons and Dragons</em> session for the
+	first time it can be a quite awkward experience. Usually a group of
+	players sit by the table, all of them with character sheets in their
+	hands, a bunch of weird dice and that’s it. No board game, no cards, no
+	controller, just an empty table and their imagination. The main
+	storyteller - a DM, starts by setting up the scenery of the game. It can
+	be anything, as long as it’s a fantasy setting (or not even!). They do
+	it by simply describing it to the players.</p>
+	<p><em>“A gentle breeze moves your hair slightly as you stick your head
+	out of the caravan. The heat of the desert makes you sweat even more but
+	your curiosity wins. You’ve been travelling for a few days now and you
+	can finally see your destination - the city of Johnturn. You smile from
+	excitement as huge city gates get closer and closer. You turn back
+	inside to tell that to your crew mates (...) ”</em></p>
+	<p>This could be the beginning of a new D&amp;D game. Coming up with a
+	story in D&amp;D can be pretty straightforward given the flexibility and
+	creativity in storytelling and gameplay. The rules are designed to be
+	adaptable, which makes it easier for the DM to create and adapt content
+	on the fly, without being bound by rigid rules or predefined outcomes.
+	Moreover, D&amp;D is a collaborative storytelling experience, so both
+	the DM and players contribute to the narrative. This shared
+	responsibility for storytelling alleviates some of the pressure on the
+	DM to single-handedly create and manage the entire campaign. Players can
+	also contribute their own ideas, backstories, and character motivations,
+	enriching the overall storytelling experience.</p>
+	<p>Tabletop role-playing games (RPGs) such as D&amp;D operate on the
+	fundamental principles of player agency and collaboration. Unlike
+	traditional storytelling mediums where the audience passively consumes a
+	predetermined narrative, D&amp;D players actively participate in shaping
+	the story through their decisions and actions. The story that the DM
+	comes up with rarely develops according to plan because of the
+	individual player’s decisions shaping the story as it develops. The
+	Dungeon Master serves as both storyteller and facilitator, adapting the
+	narrative in response to player choices, thereby creating a dynamic and
+	personalised storytelling experience.</p>
+	<p>Stories told in a D&amp;D session can be enriched by the team work of
+	the players, their collaboration and collective problem-solving. This
+	cooperative element not only strengthens their social bonds, but also
+	helps the storytelling process by incorporating diverse perspectives and
+	ideas. In the context of game theory, collaboration in D&amp;D can be
+	likened to cooperative gameplay strategies<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><span class="sidenote"> Barkley, Andrew. “Chapter 6. Game Theory.” New Prairie Press, 31 July 2019, https://kstatelibraries.pressbooks.pub/economicsoffoodandag/chapter/__unknown__-6/.
+		<br/><br /></span></span>,
+	where players work together to achieve a common goal despite potential
+	conflicts of interest (such as who is the first to collect all the shiny
+	new loot or kill more enemies). This collaborative dynamic adds depth
+	and complexity to the narrative itself.</p>
+	<p>At its core, D&amp;D is about having fun and telling engaging stories
+	with friends. While there are rules and mechanics to learn and master,
+	the primary goal of a D&amp;D campaign is to create memorable
+	experiences and enjoy shared adventures with fellow players. This focus
+	on fun and camaraderie can make running a D&amp;D campaign feel less
+	daunting and more enjoyable for DMs and players alike. All those things
+	make stories told in the medium of this tabletop role playing game more
+	engaging to experience. There are no stories that are passively consumed
+	by the players since they build the story together and each experience
+	matters for the whole story.</p>
 
-				<div class="layout-block layout-block-8">
+	<h2 class="target chapter-3" id="videogames">Video Games</h2>
+	<p>A story presented in the medium of a video game can cause emotional
+	connection between players and the medium.<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><span class="sidenote"> Said by Jakob Geller 
+		<br/><br /></span></span>
+	One reason for creating emotional involvement in the game can be the
+	power of choice given to the player. Unlike passive forms of
+	storytelling, such as books or movies, video games actively involve
+	players in the narrative. Through gameplay mechanics, players make
+	decisions that impact the story's progression, character development,
+	and outcomes. Whether this power is actually given to them or it is an
+	illusion of choice.<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><span class="sidenote"> Cuncic, Arlin. “What Is the Illusion of Choice?” Verywell Mind, 28 Apr. 2022, https://www.verywellmind.com/what-is-the-illusion-of-choice-5224973.
+		<br/><br /></span></span> This interactive engagement invests
+	players emotionally in the narrative, as they feel personally
+	responsible for the consequences of their actions.</p>
+	<p>When thinking about a game that gave me such choices, what comes to
+	my mind is <em>Life is Strange</em>, a game made by Don’t Nod in 2015.
+	The story is about a girl, Max, who suddenly gets power to reverse time
+	after having a vision of a tornado destroying the city she studies in.
+	Us, as players, we impersonate her character and are responsible for the
+	choices she makes. Whole game is choice based, dialogue has branching
+	options<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><span class="sidenote"> Contributors to Wikimedia projects. “Dialogue Tree.” Wikipedia, 30 Jan. 2024, https://en.wikipedia.org/wiki/Dialog_tree.
+		<br/><br /></span></span> in conversations and whatever
+	dialog options we choose, we will be faced with either short or long
+	term consequences. As the story progresses we reunite with our childhood
+	friend, Cloe, learn about a missing person, Rachel, and go look for her
+	as we interact with other non-playable characters.</p>
+	<p><img src="assets/images/difference lis.jpg"
+	style="width:5.61979in;height:3.22065in" /></p>
+	<p>One of the most moving stories from this game that stuck with me is
+	the story of Kate. The fellow student of Max who is being bullied for a
+	viral video depicting her kissing several students at a part. The
+	harrasment pushes her to commit suicide by jumping off the roof. Max
+	manages to rewind time and reach the roof, giving her the opportunity to
+	talk Kate down. Depending on the player's dialogue choices, Max can
+	either save Kate, or fail to convince her to not jump. I remember it
+	clearly when I was playing it, the pressure of being responsible for
+	someone’s life. Obviously enough, I know it is a fictional character but
+	I wanted to save her so badly I stopped playing for a moment and I went
+	on the Internet to look for the correct dialogue options that could talk
+	Kate out from committing suicide.</p>
+	<p>Games were not made in a vacuum - while analysing them we need to
+	remember what they represent. And during what socio-economic and
+	political climate and context they are created. They can explore
+	complex themes and narratives that resonate with players on a deeper
+	level. From exploring existential questions to delving into the human
+	condition, video game stories can evoke a wide range of emotions,
+	including joy, sadness, fear, and empathy. By engaging players
+	intellectually and emotionally, video games create lasting emotional
+	connections that transcend the boundaries of the medium.</p>
+	<p>In 2004 Peter Eliot wrote a hundred page essay<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><span class="sidenote"> PeterEliot. “ICO Plot/Story Guide (PS2).” GameFAQs, 3 Mar. 2004, https://gamefaqs.gamespot.com/ps2/367472-ico/faqs/29015.
+		<br/><br /></span></span>
+	about <em>ICO</em><span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><span class="sidenote"> Contributors to Wikimedia projects. “Ico.” Wikipedia, 8 Feb. 2024, https://en.wikipedia.org/wiki/Ico.
+		<br/><br /></span></span>, a game released in 2001 by Japan
+	Studio and Team Ico and published by Sony Computer Entertainment for the
+	PlayStation 2. This essay is not purely about gameplay but about his
+	feelings when he played this game. It follows the emotional involvement
+	of the player as he progresses in the game plot. The actual storyline is
+	a straightforward fairy tale about a prince who is saving a princess
+	from a castle. The reason why he got so emotionally connected to the
+	story is because of his interpretation of this game as a piece of art.
+	The way he interprets art is a conversation between the piece and his
+	own lived experience.</p>
+	<p>Very similary, I was probably so connected to the roof scene of Life
+	is Strange as it was reminding me of my very real experience of talking
+	my best friend out of a suicide attempt.</p>
+	<p><img src="assets/images/different ico.png"
+	style="width:2.68567in;height:2.68121in" /></p>
+	<p>The story in <em>Life is Strange</em> ends in a tornado coming to the
+	city and a player has to make a choice for Max - should we rewind time
+	and save the city from destruction, or stay with our lover (Cloe) in the
+	current time. Those two choices are hard to digest; after all, we are
+	either choosing personal happiness or the well-being of the whole
+	community. There is, though, one set of choices that can be made through
+	the game, that gives us options at the end to both save the city and
+	stay with Cloe.</p>
+	<p>In this story, choices that players make along the way strongly
+	influence the story presented in this game both long and short term.</p>
+	<p>Sometimes though, there are stories presented in games that give the
+	audience an illusion of choice in the short term, that doesn’t influence
+	the story as a whole in the end. One of the games like that is the
+	<em>Stanley Parable</em> designed and written by Davey Wreden and
+	William Pugh in 2013.</p>
+	<p>In the game, the player plays as a silent protagonist named Stanley
+	alongside narration done by Kevan Brighting. As the story progresses,
+	the player is confronted with various branching paths. Players have the
+	option to defy the narrator's instructions, leading to these acts of
+	rebellion becoming part of the evolving story or listen to him and watch
+	the story develop as it “should”. Depending on the choices made, the
+	player will encounter different endings before the game resets to the
+	beginning.</p>
+	<p><img src="assets/images/different stanley.jpg" style="width:220px;height:220px"
+	 /></p>
+	<p>In this example the player's choices matter only for the experience
+	of the story temporarily, to later be disregarded and come back to the
+	default start. If power of choice is not dominant in this video game
+	then what could be making this story so interesting to the players? Most
+	likely it is the overall concept of the player dictating their own role
+	inside the game. Games often feature protagonists with whom players can
+	identify, even if they are as abstract as “the Stanley”. By assuming the
+	role of these characters, players develop a sense of connection and
+	attachment, experiencing the story through their eyes. Especially
+	rebellion from the set path for such a character can be an appealing
+	thing to motivate the audience to engage in this story.</p>
+	<p>Overall, storytelling benefits from the medium of video games by
+	giving the audience an idea of having the power of choice. We can’t
+	forget emotional involvement by giving players relatable characters to
+	play as, or creating the engaging settings for the story itself. Video
+	games provide strong immersion in the story, but the medium I’ll be
+	discussing in the next chapter is even better for it.</p>
 
-					<p>Block 8</p>
+<h2 class="target chapter-4" id="immersiveprojects">Immersive Projects</h2>
+<p>Immersive mediums such as virtual reality (VR) and augmented reality
+(AR) are a relatively modern technology developed in the 1980s. There is
+still much to be developed and to be discovered. That’s why it is
+particularly interesting to investigate how stories benefit from being
+presented in one of them. Not so long ago, I was visiting the
+International Documentary Film Festival Amsterdam (IDFA) 2023 festival,
+where I spent most of my time in the IDFA Lab, where they were
+presenting immersive projects. I’ve seen many 360° films there, some
+video games and a few AR based projects. One of them stood out to me in
+particular - <em>Emperor</em> done by Marion Burger and Ilan Cohen in
+2023<span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><span class="sidenote"> Burger, Marion, and Ilan Cohen. Emperor. VR, 2023, https://festival.idfa.nl/en/film/49252b3a-45fb-497f-a95d-9d9ba05ec81e/emperor/. IDFA Lab, Amsterdam.
+	<br/><br /></span></span>. The reason why it was different
+from other projects is that it was more interactive than other VR
+projects.</p>
+<p><em>When I put on the VR goggles I was dragged into a black and white
+world that looked like a hand drawn illustration. A female voice started
+speaking directly to me, telling me a story of how hard it was for her
+to witness her father’s stroke on one of the hot summer days in France.
+The way she was sharing her experience with me made me feel empathetic
+to her situation and more interested in the story overall. Further into
+the story I was put in the position of the father himself. She was
+asking me to write down what time it was on a piece of paper. I took my
+controller that I was holding in my right hand and to my surprise I
+could see a virtual hand following my movements. With my digital hand
+I’ve picked up a pen and tried to write down “14:35”. The moment I did
+it, numbers on the paper changed into some scribbles. My “daughter”
+sighed and asked me to try again. At that moment I felt the frustration
+of the father from this story, I couldn’t communicate with people around
+me. Any attempt that I’ve made was met with an obstacle. I could for
+that brief moment experience what people with aphasia</em><span class="sidenote-wrapper"><label for="sn-1" class="margin-toggle sidenote-number"></label><span class="sidenote"> “Aphasia - Symptoms & Causes.” Mayo Clinic, 11 June 2022, https://www.mayoclinic.org/diseases-conditions/aphasia/symptoms-causes/syc-20369518
+	<br/><br /></span></span> <em>might be experiencing on a
+daily basis.</em></p>
+<p>Through realistic visuals, spatial audio, and interactive elements,
+VR can create powerful emotional connections with characters and story
+events, making the storytelling experience more impactful and memorable.
+Compared to films, there is no director that tells the audience what
+shot of the story to watch, when we put on VR goggles suddenly we are
+the director and we control what angle we want to see. Having the power
+over it may make his medium more appealing to the audience and thus make
+them more engaged with the story presented. For those who have not
+experienced what is presented in the immersive stories, VR simulations
+can provide a glimpse into the reality of it. By immersing viewers in
+the perspectives of people from different cultures, with illnesses, or
+even war survivors, VR fosters empathy and understanding, influencing
+the way their stories are received and interpreted by others. Viewers
+may develop a deeper appreciation for the complexities of the story they
+experience.</p>
+<p>I’ve mentioned before in this thesis how the audience engages with
+the stories in interactive environments via entertainment. However,
+there are stories told in those mediums that are far from entertaining
+and yet they still draw in. What I mean by that is an example of a
+virtual reality (VR) project done by Harun Farocki titled “Serious Games
+III: Immersion” in 2009-2010. This particular project tells a moving
+story of soldiers who have been sent to the war in Afghanistan and now
+are suffering with post-traumatic stress disorder (PTSD). Using VR
+goggles patients are transported to the virtual recreation of the war
+they’ve experienced and via exposure therapy they hope to get better.
+Farocki presents footage of a role-playing exercise in which military
+psychologists demonstrate how to use the PTSD program on their
+colleagues, who describe traumatic wartime experiences. The audience of
+this project is faced with traumatic stories of the war survivors and
+looks at how those soldiers relive their experiences in VR goggles.</p>
+<p>VR provides an immersive environment that can evoke strong emotional
+responses from users by engaging most of the senses. War survivors
+experiencing VR simulations of combat scenarios may feel as though they
+are reliving traumatic events, leading to more vivid and detailed
+storytelling. The heightened sense of presence in VR can make the
+stories told by these individuals feel more impactful.</p>
+<p>Moreover, while putting on the VR goggles one is cut out from the
+onsite world, experiencing only this one thing at the time individually.
+VR can create a safe and controlled space for war survivors to confront
+and process their traumatic experiences. In this supportive environment,
+individuals may feel more comfortable opening up and sharing their
+stories. The sense of anonymity and detachment afforded by VR can also
+reduce feelings of shame or embarrassment, allowing survivors to speak
+more freely about their experiences.</p>
+<p>Overall, the use of VR in therapy for war survivors not only
+facilitates the treatment of PTSD but also influences the way their
+stories are told and understood. By providing an immersive and safe
+space for expression, fostering empathy and understanding, and enhancing
+memory retrieval, VR plays a transformative role in shaping the
+narratives of those who have lived through war.</p>
+<p>Choosing VR as a medium for the storytelling can help the story
+itself by making the audience more immersed in it. As said in the
+previous paragraphs it can add to the storytelling by isolating the
+audience to experience the story, influence many senses and give power
+over experiencing the story as one wishes. Virtual Reality (VR) offers a
+uniquely immersive experience, enabling users to inhabit and interact
+with story environments in a deeply engaging manner, fostering a sense
+of presence and agency that traditional media cannot replicate. Its
+ability to transport users to alternate realities and allow for
+firsthand exploration enhances empathy, immersion, and the potential for
+impactful storytelling experiences.</p>
 
-				</div>
+<h2 class="target conclusion" id ="conclusion">Conclusion</h2>
+<p>In conclusion, the exploration of storytelling in interactive
+environments reveals a dynamic and multifaceted landscape where
+narratives are crafted, experienced, and shared in novel ways. From
+traditional mediums like oral storytelling, literature and film to
+modern platforms such as video games and virtual reality, storytelling
+continues to evolve, adapting to new technologies and engaging audiences
+in immersive experiences. The beauty of storytelling lies in its ability
+to transport audiences to different worlds, evoke powerful emotions, and
+provoke thought and introspection.</p>
+<p>In this thesis, I have delved into various forms of interactive
+storytelling, examining their significance and impact on audience
+engagement. From tabletop role-playing games like Dungeons &amp; Dragons
+to video games like Life is Strange and The Stanley Parable, we have
+witnessed how interactivity enhances the narrative experience, allowing
+players to actively shape the story through their decisions and actions.
+In these environments, storytelling becomes a collaborative endeavour,
+with both creators and players contributing to the unfolding
+narrative.</p>
+<p>Moreover, the emergence of immersive technologies such as virtual
+reality has opened up new possibilities for storytelling, allowing users
+to step into virtual worlds and experience narratives in unprecedented
+ways. Through realistic visuals, spatial audio, and interactive
+elements, VR creates powerful emotional connections with characters and
+story events, fostering empathy and understanding. Projects like
+"Serious Games III: Immersion" by Harun Farocki demonstrate how VR can
+be used not only for entertainment but also for therapeutic purposes,
+facilitating the treatment of PTSD and shaping the narratives of war
+survivors.</p>
+<p>In this ever-evolving landscape of interactive storytelling, the role
+of the storyteller remains crucial. Whether it's a Dungeon Master
+guiding players through a D&amp;D campaign, a game developer crafting
+branching narratives in a video game, or an artist creating immersive
+experiences in virtual reality, storytellers have the power to captivate
+audiences, provoke emotions, and spark imagination. By harnessing the
+principles of game theory and storytelling, creators can create
+compelling narratives that resonate with audiences on a deeper
+level.</p>
+<p>In conclusion, storytelling in interactive environments represents a
+convergence of creativity, technology, and human experience, offering
+endless opportunities for exploration and discovery. Whether it's
+through a game, a virtual reality experience, or a collaborative
+storytelling session, the power of storytelling transcends boundaries,
+connecting people across cultures, languages, and backgrounds. As we
+navigate this ever-changing landscape, let us continue to embrace the
+magic of storytelling and harness its transformative potential for the
+benefit of all.</p>
 
+<h2 class="target bibliography" id ="bibliography">Bibliography</h2>
+<p>Alexandra, Heather. “Games Criticism Is A Kindness.” Kotaku, 7 May
+2020, <a
+href="https://kotaku.com/games-criticism-is-a-kindness-1843320046"><u>https://kotaku.com/games-criticism-is-a-kindness-1843320046</u></a>.
+Accessed 13 January 2024.</p>
+<p>Breuleux, Yan. “The World Building Framework for Immersive
+Storytelling Projects.” <em>SHS Web of Conferences</em>, Apr. 2021.</p>
+<p>Caillois, Roger. Man, Play, and Games. Translated by Meyer Barash,
+University of Illinois Press, 2001. Accessed 13 January 2024.</p>
+<p>Cole, Yussef. “White Supremacy, Black Liberation, and the Power
+Dynamics of Gun Violence.” VICE, 19 March 2018,
+https://www.vice.com/en/article/kzxevx/white-supremacy-black-liberation-and-the-power-dynamics-of-gun-violence.
+Accessed 13 January 2024.</p>
+<p>“Emotional Engagement in Video Games: Measuring Emotions | by
+MY.GAMES | MY.GAMES.” Medium, 10 May 2023, <a
+href="https://medium.com/my-games-company/emotional-engagement-in-video-games-measuring-emotions-238ab8d02483"><u>https://medium.com/my-games-company/emotional-engagement-in-video-games-measuring-emotions-238ab8d02483</u></a>.
+Accessed 13 January 2024.</p>
+<p>“How to Use Feedback for Emotional Game Storytelling.” LinkedIn, 20
+November 2023, <a
+href="https://www.linkedin.com/advice/0/how-can-you-increase-emotional-engagement-games-story-gkqle"><u>https://www.linkedin.com/advice/0/how-can-you-increase-emotional-engagement-games-story-gkqle</u></a>.
+Accessed 13 January 2024.</p>
+<p>Kochai, Jamil Jan. “Playing Metal Gear Solid V: The Phantom Pain.”
+The New Yorker, 30 December 2019, <a
+href="https://www.newyorker.com/magazine/2020/01/06/playing-metal-gear-solid-v-the-phantom-pain"><u>https://www.newyorker.com/magazine/2020/01/06/playing-metal-gear-solid-v-the-phantom-pain</u></a>.
+Accessed 13 January 2024.</p>
+<p>Kuo, Ryan. “infinityblade — Infinity Blade.” Geek About Town, <a
+href="https://geekabouttown.com/oddities/infinity-blade/"><u>https://geekabouttown.com/oddities/infinity-blade/</u></a>.
+Accessed 13 January 2024.</p>
+<p>Faria, Leo. “Review - The Stanley Parable: Ultra Deluxe.”
+WayTooManyGames, 28 Apr. 2022, <a
+href="https://waytoomany.games/2022/04/28/review-the-stanley-parable-ultra-deluxe/"><u>https://waytoomany.games/2022/04/28/review-the-stanley-parable-ultra-deluxe/</u></a>.
+Accessed 14 Feb. 2024.</p>
+<p>Cuncic, Arlin. “What Is the Illusion of Choice?” Verywell Mind, 28
+Apr. 2022, <a
+href="https://www.verywellmind.com/what-is-the-illusion-of-choice-5224973"><u>https://www.verywellmind.com/what-is-the-illusion-of-choice-5224973</u></a>.
+Accessed 14 Feb. 2024.</p>
+<p>Contributors to Wikimedia projects. “The Stanley Parable.” Wikipedia,
+1 Feb. 2024, <a
+href="https://en.wikipedia.org/wiki/The_Stanley_Parable"><u>https://en.wikipedia.org/wiki/The_Stanley_Parable</u></a>.
+Accessed 14 Feb. 2024.</p>
+<p>Contributors to Wikimedia projects. “Life Is Strange (Video Game).”
+Wikipedia, 30 Dec. 2023, <a
+href="https://en.wikipedia.org/wiki/Life_Is_Strange_(video_game)"><u>https://en.wikipedia.org/wiki/Life_Is_Strange_(video_game)</u></a>.
+Accessed 14 Feb. 2024.</p>
+<p>PeterEliot. “ICO Plot/Story Guide (PS2).” GameFAQs, 3 Mar. 2004, <a
+href="https://gamefaqs.gamespot.com/ps2/367472-ico/faqs/29015"><u>https://gamefaqs.gamespot.com/ps2/367472-ico/faqs/29015</u></a>.
+Accessed 14 Feb. 2024.</p>
+<p>Skolnick, Evan. Video Game Storytelling: What Every Developer Needs
+to Know about Narrative Techniques. CRC Press, 2014.</p>
+<p>Glassner, Andrew. Interactive Storytelling: Techniques for 21st
+Century Fiction. A K Peters/CRC Press, 2004.</p>
+<p>Schell, Jesse. The Art of Game Design: A Book of Lenses. CRC Press,
+2014.</p>
+<p>Tekinbaş, Katie Salen, and Eric Zimmerman. Rules of Play: Game Design
+Fundamentals. The MIT Press, 2003.</p>
+<p>Juul, Jesper. Half-Real: Video Games between Real Rules and Fictional
+Worlds. The MIT Press, 2011.</p>
+<p>Rogers, Scott. Level Up! The Guide to Great Video Game Design. John
+Wiley &amp; Sons, 2014.</p>
+<p>Suter, Beat, et al. Narrative Mechanics: Strategies and Meanings in
+Games and Real Life. Transcript Publishing, 2021.</p>
+<p>Sicart, Miguel. Play Matters. MIT Press, 2014.</p>
+<p>Burger, Marion, and Ilan Cohen. Emperor. VR, 2023, <a
+href="https://festival.idfa.nl/en/film/49252b3a-45fb-497f-a95d-9d9ba05ec81e/emperor/"><u>https://festival.idfa.nl/en/film/49252b3a-45fb-497f-a95d-9d9ba05ec81e/emperor/</u></a>.
+IDFA Lab, Amsterdam.</p>
+<p>Farocki, Harun. Serious Games III: Immersion. VR, Film, 2010, <a
+href="https://vimeo.com/370494311"><u>https://vimeo.com/370494311</u></a>.
+MOMA.</p>
+<p>Delano, Ollie. “All DnD 5e Books: A Complete List.” Dungeons &amp;
+Dragons Fanatics, 13 Feb. 2024, <a
+href="https://dungeonsanddragonsfan.com/dnd-5e-books-list/"><u>https://dungeonsanddragonsfan.com/dnd-5e-books-list/</u></a>.
+Accessed 27 Feb. 2024.</p>
 
-				<div class="layout-block layout-block-9">
+<h2 class="target works cited" id ="works cited">Works Cited</h2>
+<p>Burger, Marion, and Ilan Cohen. <em>Emperor</em>. VR, 2023,
+https://festival.idfa.nl/en/film/49252b3a-45fb-497f-a95d-9d9ba05ec81e/emperor/.
+IDFA Lab, Amsterdam.</p>
+<p>Contributors to Wikimedia projects. “Life Is Strange (Video Game).”
+<em>Wikipedia</em>, 30 Dec. 2023,
+https://en.wikipedia.org/wiki/Life_Is_Strange_(video_game). Accessed 14
+Feb. 2024.</p>
+<p>---. “The Stanley Parable.” <em>Wikipedia</em>, 1 Feb. 2024,
+https://en.wikipedia.org/wiki/The_Stanley_Parable. Accessed 14 Feb.
+2024.</p>
+<p>Cuncic, Arlin. “What Is the Illusion of Choice?” <em>Verywell
+Mind</em>, 28 Apr. 2022,
+https://www.verywellmind.com/what-is-the-illusion-of-choice-5224973.
+Accessed 14 Feb. 2024.</p>
+<p>Delano, Ollie. “All DnD 5e Books: A Complete List.” <em>Dungeons
+&amp;amp; Dragons Fanatics</em>, 13 Feb. 2024,
+https://dungeonsanddragonsfan.com/dnd-5e-books-list/. Accessed 27 Feb.
+2024.</p>
+<p>Faria, Leo. “Review - The Stanley Parable: Ultra Deluxe.”
+<em>WayTooManyGames</em>, 28 Apr. 2022,
+https://waytoomany.games/2022/04/28/review-the-stanley-parable-ultra-deluxe/.
+Accessed 14 Feb. 2024.</p>
+<p>Farocki, Harun. <em>Serious Games III: Immersion</em>. VR, Film,
+2010, https://vimeo.com/370494311. MOMA.</p>
+<p>PeterEliot. “ICO Plot/Story Guide (PS2).” <em>GameFAQs</em>, 3 Mar.
+2004, https://gamefaqs.gamespot.com/ps2/367472-ico/faqs/29015. Accessed
+14 Feb. 2024.</p>
+<p>Rogers, Scott. <em>Level Up! The Guide to Great Video Game
+Design</em>. John Wiley &amp; Sons, 2014.</p>
+<p>Sicart, Miguel. <em>Play Matters</em>. MIT Press, 2014.</p>
+<p>Suter, Beat, et al. <em>Narrative Mechanics: Strategies and Meanings
+in Games and Real Life</em>. Transcript Publishing, 2021.</p>
+<p><em>The Game Designer’s Playbook: An Introduction to Game Interaction
+Design</em>. Oxford University Press, 2022.</p>
 
-					<p>Block 9</p>
-
-				</div>
-
-				<div class="layout-block layout-block-10">
-
-					<p>Block 10</p>
-
-				</div>
-
-
-				<div class="layout-block layout-block-11">
-
-					<p>Block 11</p>
-
-				</div>
-
-
-				<div class="layout-block layout-block-12">
-
-					<p>Block 12</p>
-					
-				</div>
-
-			</main>
-
-		</div>
-
-		<!-- end webpage content -->
-
-	</body>
-
+<!-- <aside id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Contributors to Wikitubia. “Jacob Geller.” <em>Fandom,
+Inc.</em>, https://youtube.fandom.com/wiki/Jacob_Geller.<a
+href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Geller, Jacob. “Staring into the Sun, and Other Ways of
+Capturing Transcendence.” <em>YouTube</em>, Video, 7 Aug. 2023,
+https://www.youtube.com/watch?v=WSbUPaLTTUg.<a href="#fnref2"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>---. “Storytelling.” <em>Wikipedia</em>, 24 Feb. 2024,
+https://en.wikipedia.org/wiki/Storytelling.<a href="#fnref3"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p><em>The Simple Essence of Great Storytelling</em>.
+https://www.faisaljamshaid.com/blog/the-simple-essence-of-great-storytelling.<a
+href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Decker, Allie. “The Ultimate Guide to Storytelling.”
+<em>HubSpot</em>, 05 Nov. 2023,
+https://blog.hubspot.com/marketing/storytelling.<a href="#fnref5"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Skolnick, Evan. Video Game Storytelling: What Every
+Developer Needs to Know about Narrative Techniques. CRC Press, 2014.<a
+href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Alismail, Halah Ahmed. “Integrate Digital Storytelling
+in Education.” <em>Integrate Digital Storytelling in Education</em>,
+2015, https://files.eric.ed.gov/fulltext/EJ1082416.pdf.<a href="#fnref7"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Dwivedi, Yogesh K., et al. “Metaverse beyond the Hype:
+Multidisciplinary Perspectives on Emerging Challenges, Opportunities,
+and Agenda for Research, Practice and Policy.” <em>International Journal
+of Information Management</em>, vol. 66, Oct. 2022, p. 102542,
+https://doi.org/10.1016/j.ijinfomgt.2022.102542.<a href="#fnref8"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>Rachael. “What Is The Difference Between Immersive And
+Interactive - Draw &amp; Code.” <em>Draw &amp; Code - VR, AR &amp;
+Immersive Tech</em>,
+https://drawandcode.com/learning-zone/what-is-the-difference-between-immersive-and-interactive/.
+Accessed 27 Feb. 2024.<a href="#fnref9" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>https://github.com/kabk/go-theses-24-paulina-cywoniuk<a
+href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>Dictionary, Cambridge. “Nerd.” <em>English Meaning -
+Cambridge Dictionary</em>,
+https://dictionary.cambridge.org/dictionary/english/nerd. Accessed 07
+Feb. 2024.<a href="#fnref11" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>D&amp;D character sheet<a href="#fnref12"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p>D&amp;D player’s handbook<a href="#fnref13"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>Delano, Ollie. “All DnD 5e Books: A Complete List.”
+<em>Dungeons &amp;amp; Dragons Fanatics</em>, 13 Feb. 2024,
+https://dungeonsanddragonsfan.com/dnd-5e-books-list/. Accessed 07 Feb.
+2024.<a href="#fnref14" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><p>Barkley, Andrew. “Chapter 6. Game Theory.” <em>New
+Prairie Press</em>, 31 July 2019,
+https://kstatelibraries.pressbooks.pub/economicsoffoodandag/chapter/__unknown__-6/.
+Accessed 14 Feb. 2024.<a href="#fnref15" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p>Said by Jakob geller<a href="#fnref16"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p>Cuncic, Arlin. “What Is the Illusion of Choice?”
+Verywell Mind, 28 Apr. 2022, <a
+href="https://www.verywellmind.com/what-is-the-illusion-of-choice-5224973"><u>https://www.verywellmind.com/what-is-the-illusion-of-choice-5224973</u></a>.
+Accessed 14 Feb. 2024.<a href="#fnref17" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn18"><p>Contributors to Wikimedia projects. “Dialogue Tree.”
+<em>Wikipedia</em>, 30 Jan. 2024,
+https://en.wikipedia.org/wiki/Dialog_tree. Accessed 14 Feb. 2024.<a
+href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn19"><p>PeterEliot. “ICO Plot/Story Guide (PS2).” GameFAQs, 3
+Mar. 2004, <a
+href="https://gamefaqs.gamespot.com/ps2/367472-ico/faqs/29015"><u>https://gamefaqs.gamespot.com/ps2/367472-ico/faqs/29015</u></a>.
+Accessed 14 Feb. 2024.<a href="#fnref19" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn20"><p>Contributors to Wikimedia projects. “Ico.”
+<em>Wikipedia</em>, 8 Feb. 2024, https://en.wikipedia.org/wiki/Ico.
+Accessed 14 Feb. 2024.<a href="#fnref20" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn21"><p>Burger, Marion, and Ilan Cohen. <em>Emperor</em>. VR,
+2023,
+https://festival.idfa.nl/en/film/49252b3a-45fb-497f-a95d-9d9ba05ec81e/emperor/.
+IDFA Lab, Amsterdam.<a href="#fnref21" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn22"><p>“Aphasia - Symptoms &amp; Causes.” <em>Mayo
+Clinic</em>, 11 June 2022,
+https://www.mayoclinic.org/diseases-conditions/aphasia/symptoms-causes/syc-20369518.
+Accessed 27 Jan. 2024.<a href="#fnref22" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+</ol>
+</aside> -->
+</body>
 </html>
